@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!--<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script src="js/modernizr.custom.97074.js"></script>
+		<script type="text/javascript" src="css/bootstrap.min.js" ></script>
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+	<style>
+			.fontSize{font-size: 18px;color: #fff !important;}
+			.top {
+				width: 100%;
+				height: 700px;
+				background: url(./img/web-3.png) no-repeat center bottom;
+				position: relative;
+				background-size: cover;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;}
+			
+			.top-1 {
+				text-align: center;
+				line-height: 100px;
+				height: 100px;
+				position: relative;
+				top: 150px;
+				font-size: 40px;
+				color: #fff;
+			}
+			.dhbgcolor{background-color: #95bbc8 !important;border-bottom: 0px;}
+			.introduce{width:90%;margin: 80px auto; position: relative;}
+			.introduce>h1 {
+				text-align: center;
+			}
+			
+			.introduce>span {display: block;width: 150px;height: 5px;background-color: #95bbc8;margin: 0 auto;margin-bottom: 50px;}
+			.introduce>.row>.introduceRight img{position: relative;right: 0px;width: 100%;}
+			.introduce>.row>.introduceLeft>h3,.introduce>.row>.introduceLeft>h4{
+				line-height: 2.5em;
+			}
+			
+			.introduce>.row>.introduceLeft>.intro-1{
+				font-size:100%;
+				line-height: 2em;
+				margin: 10px 0px;
+			}
+			
+			@media screen and (max-width: 1280px) {
+				.top {
+					height: 700px;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				.top {
+					height: 550px;
+				}
+				.top-1 {
+					text-align: center;
+					line-height: 80px;
+					height: 80px;
+					position: relative;
+					top: 120px;
+					font-size: 35px;
+					color: #fff;
+				}
+			}
+			
+			@media screen and (max-width: 580px) {
+				.top {
+					height: 450px;
+				}
+				.top-1 {
+					text-align: center;
+					line-height: 60px;
+					height: 60px;
+					position: relative;
+					top: 100px;
+					font-size: 25px;
+					color: #fff;
+				}
+			}
+			.contactMe{text-align: center;height: 460px;padding: 60px; background-color:#95bbc8;}
+			.contactMe *{line-height: 2.2;color: #FFFFFF;}
+		</style>
+	
+</head>
+<body>
+	
+<!-- banner -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10">
+					<div class="navbar navbar-default navbar-fixed-top dhbgcolor">
+						<div class="navbar-header  col-md-offset-1">
+							<button type="button" class="navbar-toggle"data-toggle="collapse" data-target="#daohang">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand fontSize">个人主页</a>
+						</div>
+						<div class="collapse navbar-collapse col-md-offset-6"id="daohang">
+							<ul class="nav navbar-nav">
+								<li><a class="fontSize" href="#">&nbsp;主界面</a></li>
+								<li><a class="hidden-xs fontSize" href="#">|</a></li>
+								<li><a class="fontSize"href="#aboutMe">&nbsp;关于我</a></li>
+								<li><a class="hidden-xs fontSize" href="#">|</a></li>
+								<li><a class="fontSize" href="#portfolio">&nbsp;我的作品</a></li>
+								<li><a class="hidden-xs fontSize" href="#">|</a></li>
+								<li><a class="fontSize" href="#contactMe">&nbsp;联系方式</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="top container">
+			<div class="top-1">
+				<p>I am Wang Huailiang.</p>
+				<p>I love the design, so I'll try to do it better.</p>
+			</div>
+		</div>
+
+<!-- about -->
+		<div class="introduce container"id="aboutMe">
+			<h1 >关于我</h1>
+			<span></span>
+			<div class="row">
+				<div class="col-md-6 introduceLeft">
+					<h3><strong>王怀亮</strong></h3>
+					<h4><strong>前端工程师</strong></h4>
+					<p class="intro-1">我精通html,css以及javascript,jQuery脚本语言，熟练运用编程软件和图形处理软件，
+					对主流浏览器的兼容性有一定的了解，并有相关问题的解决经验，同时也熟悉bootstrap，angularjs 等开发框架。</p>
+					<p class="intro-1">我性格乐观开朗，有极强的学习能力、动手能力，有良好的创新、承压、解决问题能力，工作积极主动、耐心细致，
+						有团队合作精神，诚心愿在Web前端行业发展下去。</p>
+				</div>
+				<div class="col-md-6 introduceRight">
+					<a><img src="img/fish.gif"/></a>
+				</div>
+			</div>
+		</div>
+
+<!-- about -->
+<!-- my skills -->
+	<div class="our-skills"id="mySkill">
+		<div class="container">
+			<div class="skill-info">
+				<h2>我的技能</h2>
+				<span style="display: block;width: 200px;height: 5px;background-color: #FFFFFF;margin: 0 auto;margin-bottom: 50px;"></span>
+			</div>
+			<div class="skill-grids">
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-1"></div>
+						<p>HTML</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-2"></div>
+						<p>CSS</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-3"></div>
+						<p>JAVASCRIPT</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-4"></div>
+						<p>JQUERY</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-5"></div>
+						<p>AJAX</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-6"></div>
+						<p>HTML5/CSS3</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-7"></div>
+						<p>BOOTSTRAP</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-8"></div>
+						<p>PHP/MYSQL</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-9"></div>
+						<p>ANGULARJS</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-10"></div>
+						<p>PHOTOSHOP</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-11"></div>
+						<p>ILLUSTRATOR</p>
+					</div>
+					<div class="col-md-2 col-sm-3 col-xm-6 skills-grid text-center">
+						<div class="circle" id="circles-12"></div>
+						<p>LINUX</p>
+					</div>
+					<div class="clearfix"> </div>
+				 <script type="text/javascript" src="js/circles.js"></script>
+					         <script>
+								var colors = [
+										['#ced7df', '#ffffff']
+									];
+								var arr=new Array(90,90,85,90,90,80,85,75,70,70,85,80,75);
+								for (var i = 1; i <= 12; i++) {
+									var child = document.getElementById('circles-' + i),
+										percentage =arr[i];
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   	percentage,
+										text:       '%',
+										colors:     colors[0]
+									});
+								}
+						
+				</script>
+			</div>
+		</div>	
+	</div>
+<!-- //my skills -->
+<div id="portfolio" class="gallery">
+		<div class="container">
+				<script src="js/jquery.chocolat.js"></script>
+			<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+			<!--light-box-files -->
+			<!--<script type="text/javascript" charset="utf-8">
+			$(function() {
+				$('.gallery a').Chocolat();
+			});
+			</script>-->
+			<h3>我的作品</h3>
+			<span style="display: block;width: 200px;height: 5px;background-color: #95bbc8;margin: 0 auto;margin-bottom: 50px;"></span>
+			
+			<section>
+				<ul id="da-thumbs" class="da-thumbs">
+					<li>
+						<a href="https://www.baidu.com" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a1.png" alt="" />
+							<div>
+								<h5><strong>天猫</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a2.png" alt="" />
+							<div>
+								<h5><strong>优站精选</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a3.png" alt="" />
+							<div>
+								<h5><strong>一号店</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a4.png" alt="" />
+							<div>
+								<h5><strong>苹果</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>	
+						<a href="images/a5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a5.png" alt="" />
+							<div>
+								<h5><strong>猎聘</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a6.png" alt="" />
+							<div>
+								<h5><strong>飞机大战</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a7.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a7.png" alt="" />
+							<div>
+								<h5><strong>2048</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a8.png" alt="" />
+							<div>
+								<h5><strong>贪吃蛇</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="images/a2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+							<img src="images/a9.png" alt="" />
+							<div>
+								<h5><strong>五子棋</strong><br/>VIEW</h5>
+							</div>
+						</a>
+					</li>
+					
+					<div class="clearfix"> </div>
+				</ul>
+			</section>
+				<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+				<script type="text/javascript">
+					$(function() {
+						$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+					});
+				</script>
+        </div>	
+</div>
+<!--//gallery-->
+
+<!-- contact-me -->
+	<div class="contactMe"id="contactMe">
+		<h1>联系方式</h1>
+		<span style="display: block;width: 200px;height: 5px;background-color: #FFFFFF;margin: 0 auto;"></span>
+		<h3>北京</h3>
+		<h3>Tel:15392586355</h3>
+		<h3>QQ:390891665</h3>
+		<h3>Email:15392586355@163.com</h3>
+		<h3>henrywang8.github.io</h3>
+		<div class="clearfix"> </div>
+	</div>
+<!-- //contact-me -->
+<!-- footer -->
+<div class="copy-right">
+	<div class="container">
+		<p> &copy; 2015 Wang Huailiang.</p>
+	</div>
+</div>
+<!-- footer -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+</body>
+</html>
